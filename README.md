@@ -51,7 +51,7 @@ This code studying variational observability Gramian while analyzing combustion 
 
 ## Chemical Systems
 
-### H2O2 System (10 species)
+### H2O2 System (9 species)
 - Small hydrogen-oxygen reaction network
 - Used for detailed analysis and illustration
 
