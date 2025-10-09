@@ -44,7 +44,7 @@ This code studying variational observability Gramian while analyzing combustion 
    ```
 
 2. The script will:
-   - Load H2O2 (10 species) and GRI30 (53 species) chemical systems
+   - Load H2O2 (9 species) and GRI30 (53 species) chemical systems
    - Compute variational Gramian observability matrices
    - Compute empirical Gramian observability matrices
    - Perform optimal sensor placement using greedy algorithm
