@@ -81,7 +81,8 @@ The code generates:
 ## Citing this code
 If you use this code, please cite the accompanying paper:
 
-" M. H. Kazma and A. F. Taha, "Observability for Nonlinear Systems: Connecting Variational Dynamics, Lyapunov Exponents, and Empirical Gramians."
+M. H. Kazma and A. F. Taha, "Observability for Nonlinear Systems: Connecting Variational Dynamics, Lyapunov Exponents, and Empirical Gramians, IEEE Transaction of Control Network Systems, In Review. arXiv: https://arxiv.org/abs/2402.14711
+
 
 ## Contact
 
