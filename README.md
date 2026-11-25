@@ -1,5 +1,7 @@
 # Observability for Nonlinear Systems: Connecting Variational Dynamics, Lyapunov Exponents, and Empirical Gramians
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24544621.svg)](https://doi.org/10.5281/zenodo.24544621)
+
 This repository contains the MATLAB code for the paper cited below. The paper shows that the variational form of a discrete-time nonlinear system yields a variational observability Gramian (Var-Gram) that is equivalent to the empirical observability Gramian (Empr-Gram) under linear output mappings, relates existing observability measures to the Var-Gram through Lyapunov exponents, and uses the Var-Gram for sensor placement. The code computes the Var-Gram from the variational representation of the system, which propagates perturbations of the initial state along the system trajectory. The Empr-Gram instead needs two simulations of the nonlinear model for every state variable, one with a positive and one with a negative perturbation of its initial value, while the Var-Gram needs a single simulation. As a result, the Var-Gram is computed two to three orders of magnitude faster on the combustion reaction networks of the paper. The code also places sensors with a greedy algorithm that maximizes the log determinant of the Var-Gram, a submodular measure, which scales to large networks.
 
 ## Requirements
@@ -92,6 +94,19 @@ M. H. Kazma and A. F. Taha, "Observability for Nonlinear Systems: Connecting Var
   year    = {2026},
   doi     = {10.1109/TCNS.2026.3721959},
   note    = {Received 9 October 2025; accepted 31 July 2026; published 11 August 2026. arXiv:2402.14711}
+}
+```
+
+To cite the code itself (version 1.0, archived on Zenodo):
+
+```bibtex
+@misc{kazma2026obsnonsys,
+  author       = {Kazma, Mohamad H. and Taha, Ahmad F.},
+  title        = {{ObsNonSys-VarGram}: Observability for nonlinear systems via variational dynamics,
+                  Lyapunov exponents, and empirical Gramians (Version 1.0)},
+  howpublished = {Zenodo},
+  year         = {2026},
+  doi          = {10.5281/zenodo.24544621}
 }
 ```
 
