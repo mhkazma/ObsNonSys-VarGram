@@ -1,0 +1,34 @@
+{
+  "title": "ObsNonSys-VarGram: Observability for nonlinear systems via variational dynamics, Lyapunov exponents, and empirical Gramians",
+  "upload_type": "software",
+  "description": "MATLAB code for the paper Observability for Nonlinear Systems: Connecting Variational Dynamics, Lyapunov Exponents, and Empirical Gramians by M. H. Kazma and A. F. Taha, IEEE Transactions on Control of Network Systems, 2026 (received 9 October 2025, accepted 31 July 2026, published 11 August 2026), DOI 10.1109/TCNS.2026.3721959, arXiv:2402.14711. The paper shows that the variational form of a discrete-time nonlinear system yields a variational observability Gramian (Var-Gram) that is equivalent to the empirical observability Gramian (Empr-Gram) under linear output mappings, relates existing observability measures to the Var-Gram through Lyapunov exponents, and uses the Var-Gram for sensor placement. The code computes the Var-Gram from the variational representation of the system, which propagates perturbations of the initial state along the system trajectory. The Empr-Gram instead needs two simulations of the nonlinear model for every state variable, one with a positive and one with a negative perturbation of its initial value, while the Var-Gram needs a single simulation. As a result, the Var-Gram is computed two to three orders of magnitude faster on the combustion reaction networks of the paper. The code also places sensors with a greedy algorithm that maximizes the log determinant of the Var-Gram, a submodular system-theoretic measure, which scales to any large network.",
+  "creators": [
+    {
+      "name": "Kazma, Mohamad H.",
+      "affiliation": "Vanderbilt University",
+      "orcid": "0000-0002-8217-1633"
+    },
+    {
+      "name": "Taha, Ahmad F.",
+      "affiliation": "Vanderbilt University",
+      "orcid": "0000-0003-0486-2794"
+    }
+  ],
+  "license": "MIT",
+  "version": "1.0",
+  "keywords": [
+    "observability",
+    "nonlinear systems",
+    "observability Gramian",
+    "Lyapunov exponents",
+    "sensor placement"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1109/TCNS.2026.3721959",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ]
+}

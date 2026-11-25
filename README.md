@@ -1,6 +1,6 @@
 # Observability for Nonlinear Systems: Connecting Variational Dynamics, Lyapunov Exponents, and Empirical Gramians
 
-This code studying variational observability Gramian while analyzing combustion reaction networks observability. The code accompanies the research paper mentioned below.
+This repository contains the MATLAB code for the paper cited below. The paper shows that the variational form of a discrete-time nonlinear system yields a variational observability Gramian (Var-Gram) that is equivalent to the empirical observability Gramian (Empr-Gram) under linear output mappings, relates existing observability measures to the Var-Gram through Lyapunov exponents, and uses the Var-Gram for sensor placement. The code computes the Var-Gram from the variational representation of the system, which propagates perturbations of the initial state along the system trajectory. The Empr-Gram instead needs two simulations of the nonlinear model for every state variable, one with a positive and one with a negative perturbation of its initial value, while the Var-Gram needs a single simulation. As a result, the Var-Gram is computed two to three orders of magnitude faster on the combustion reaction networks of the paper. The code also places sensors with a greedy algorithm that maximizes the log determinant of the Var-Gram, a submodular measure, which scales to large networks.
 
 ## Requirements
 
@@ -81,8 +81,23 @@ The code generates:
 ## Citing this code
 If you use this code, please cite the accompanying paper:
 
-M. H. Kazma and A. F. Taha, "Observability for Nonlinear Systems: Connecting Variational Dynamics, Lyapunov Exponents, and Empirical Gramians, IEEE Transaction of Control Network Systems, In Review. arXiv: https://arxiv.org/abs/2402.14711
+M. H. Kazma and A. F. Taha, "Observability for Nonlinear Systems: Connecting Variational Dynamics, Lyapunov Exponents, and Empirical Gramians," *IEEE Transactions on Control of Network Systems*, 2026. Received 9 October 2025; accepted 31 July 2026; published 11 August 2026. DOI: [10.1109/TCNS.2026.3721959](https://doi.org/10.1109/TCNS.2026.3721959). arXiv: [2402.14711](https://arxiv.org/abs/2402.14711).
 
+```bibtex
+@article{kazma2026observability,
+  author  = {Kazma, Mohamad H. and Taha, Ahmad F.},
+  title   = {Observability for Nonlinear Systems: Connecting Variational Dynamics,
+             Lyapunov Exponents, and Empirical Gramians},
+  journal = {IEEE Transactions on Control of Network Systems},
+  year    = {2026},
+  doi     = {10.1109/TCNS.2026.3721959},
+  note    = {Received 9 October 2025; accepted 31 July 2026; published 11 August 2026. arXiv:2402.14711}
+}
+```
+
+## License
+
+MIT, see [LICENSE](LICENSE).
 
 ## Contact
 
